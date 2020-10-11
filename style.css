@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(226, 228, 197);
+}
+.container{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 30px repeat(7,1fr) ;
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft" ;
+}
+.container >div{
+    border: 2px solid rgb(170, 99, 67);
+}
+.header-box{
+    grid-area: hd;
+}
+.footer{
+    grid-area: ft;
+}
+.side-bar{
+    grid-area:sd;
+}
+.content-box{
+  grid-area:main;
+ background-image: url("/images/nature2.jpg");
+ background-size: contain;
+ background-repeat: no-repeat;
+ 
+}

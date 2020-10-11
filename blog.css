@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+   
+    grid-template-rows: 100px 350px 600px 100px ;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft  ft ft ft ft ft ft"
+    ;
+}
+.container >div{
+    border: 2px solid cadetblue;
+    background: cornsilk;
+}
+.header{
+    grid-area: hd;
+}
+.footer{
+    grid-area: ft;
+}
+.feature{
+    grid-area: feat;
+}
+.content{
+    grid-area: main;
+}
